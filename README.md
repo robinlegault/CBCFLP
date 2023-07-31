@@ -1,4 +1,4 @@
-# The Simulation-based Hybrid Submodular (SHS) Method for solving Choice-Based Competitive Facility Location Problems (CBCFLP)
+# The simulation-based hybrid submodular (SHS) method for solving choice-based competitive facility location problems (CBCFLP)
 
 ## Reference
 The SHS method is described in Legault, R. & Frejinger, E. A model-free approach for solving choice-based competitive facility location problems using simulation and submodularity. arXiv:2203.11329 (2022). See our [arXiv preprint](https://arxiv.org/abs/2203.11329):
