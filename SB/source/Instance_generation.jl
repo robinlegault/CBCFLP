@@ -1,5 +1,4 @@
 # Author: Robin Legault <legault@mit.edu>
-# License:
 
 #Packages
 using Distributions

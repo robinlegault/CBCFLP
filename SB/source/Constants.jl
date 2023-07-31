@@ -1,5 +1,4 @@
 # Author: Robin Legault <legault@mit.edu>
-# License:
 
 # Paths
 global RESULTS_PATH = dirname(pwd())*"/results/"

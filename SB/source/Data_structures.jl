@@ -1,5 +1,4 @@
 # Author: Robin Legault <legault@mit.edu>
-# License:
 
 ##########################################################################################################
 ####################### High-level instance description and computational statistics #####################

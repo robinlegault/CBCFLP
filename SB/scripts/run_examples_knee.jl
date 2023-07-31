@@ -1,5 +1,4 @@
 # Author: Robin Legault <legault@mit.edu>
-# License:
 
 # Dependencies
 include("../source/Experiments_runner.jl")

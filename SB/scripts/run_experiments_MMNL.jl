@@ -1,5 +1,4 @@
 # Author: Robin Legault <legault@mit.edu>
-# License:
 
 # Dependencies
 include("../source/IO_functions.jl")
