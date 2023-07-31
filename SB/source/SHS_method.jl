@@ -142,8 +142,6 @@ function SHS(a, ω, b; min_P_submod=0, tvd_min=0, P1_auto=true, P1_weight_min=1,
     
     #Callback function: submodularity cuts (lazy constraints, called on integer nodes)
     if(P2 > 0)
-        #set_optimizer_attribute(m, "CPXPARAM_Preprocessing_Presolve", 0) # No presolve with lazy constraints
-        #set_optimizer_attribute(m, "CPXPARAM_Threads", 1) # Single thread (CPLEX's lazy constraints are global)
         aω2 = a2.*ω2
         margin_gain_all_open = sum(max.(0, 2*aω2 .- sum(aω2, dims=2)), dims=1)[1,:]
         margin_gain_all_closed = sum(aω2,dims=1)[1,:]
