@@ -8,7 +8,7 @@ include("../src/Experiments_runner.jl")
 ##########################################################################################################
 
 run_NYC = true
-run_OUR = true
+run_HM14 = true
 
 if(run_NYC)
     # Parameters
@@ -37,15 +37,15 @@ if(run_NYC)
     runner_MNL(inst_list, α_list, β_list, S_list, b_list, excel_file; clustering=false, P1_auto=false, P1_weight_min=1, n_rep=n_rep, verbose=verbose, limit_time=limit_time, display=dis, std_file=std_file)
 end
 
-if(run_OUR)
+if(run_HM14)
     # Parameters
-    inst_list = ["OUR_800_25", "OUR_800_50", "OUR_800_100"] 
+    inst_list = ["HM14_800_25", "HM14_800_50", "HM14_800_100"] 
     β_list = [1, 2, 5, 10]
     α_list = [0.05, 0.1, 0.2]
     S_list = [10, 100, 1000]
     b_list = [2,3,4,5,6,7,8,9,10]
-    excel_file = "MNL_OUR.xlsx"
-    std_file = "MNL_OUR.txt"
+    excel_file = "MNL_HM14.xlsx"
+    std_file = "MNL_HM14.txt"
     n_rep = 1
     limit_time = 600
     verbose = 2

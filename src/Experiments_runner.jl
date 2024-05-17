@@ -152,7 +152,7 @@ function runner_MMNL(instance, q, v, V, w_super, W_super, b_list, S_list, excel_
 
     if(std_file!="")
         # Open a file in write mode
-        stdfile = open(RESULTS_PATH*std_file, "a")
+        stdfile = open(RESULTS_OUTPUT_PATH*std_file, "a")
 
         # Redirect stdout to the file
         redirect_stdout(stdfile)

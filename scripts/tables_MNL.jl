@@ -11,7 +11,7 @@ include("../src/IO_functions.jl")
 ##########################################################################################################
 
 results_NYC = true
-results_OUR = true
+results_HM14 = true
 
 if(results_NYC)
     # Load results
@@ -168,9 +168,9 @@ if(results_NYC)
     println("list_RGap_GGX  = ",round.(list_RGap_GGX , digits=2))
 end
 
-if(results_OUR)
+if(results_HM14)
     # Load results
-    results_file = "MNL_OUR_paper.xlsx" 
+    results_file = "MNL_HM14_paper.xlsx" 
     df = DataFrame(XLSX.readtable(RESULTS_PATH*results_file, "Sheet1"; header=true, infer_eltypes=true))
     df_MOA = DataFrame(XLSX.readtable(RESULTS_PATH_MOA_GGX*"GGX_MOA_"*results_file, "MOA"; header=true, infer_eltypes=true))
     df_GGX = DataFrame(XLSX.readtable(RESULTS_PATH_MOA_GGX*"GGX_MOA_"*results_file, "GGX"; header=true, infer_eltypes=true))
@@ -316,7 +316,7 @@ if(results_OUR)
     end
 
     # Print the table content to standard output
-    println("____________________ Content Tables conditional MNL OUR ____________________")
+    println("____________________ Content Tables conditional MNL HM14 ____________________")
     for iD ∈ 1:nD
         D = list_D[iD]
         println("\n========================== D = ",D," ==========================")

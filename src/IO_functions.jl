@@ -232,7 +232,7 @@ end
 ##########################################################################################################
 function append_xl_row(outfile, row_data; sheet_name="Sheet1", column_names=[], overwrite_last=false)
     
-    workbook_path = RESULTS_PATH*outfile #location: ../results folder
+    workbook_path = RESULTS_OUTPUT_PATH*outfile #location: ../results folder
     if !isfile(workbook_path)
         # File doesn't exist, so create it using ExcelFiles.jl
         if(column_names==[])
